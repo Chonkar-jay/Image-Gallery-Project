@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery-item {
+            list-style-type: none;
+            margin: 10px;
+        }
+        .gallery-item img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .full-size-image {
+            display: none;
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .full-size-image img {
+            width: 100%;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+        <ul class="gallery-list"></ul>
+    </div>
+    <div class="full-size-image">
+        <img id="full-image" src="" alt="">
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
